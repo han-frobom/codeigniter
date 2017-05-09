@@ -52,6 +52,13 @@ $this->db->where('users.id',$id);
 return $this->db->delete('users');
 
 }
+function get_user($email, $pwd)
+	{
+		$this->db->where('email', $email);
+		$this->db->where('password', md5($pwd));
+        $query = $this->db->get('users');
+		return $query->result();
+	}
 }
 
 ?>

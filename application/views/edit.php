@@ -18,9 +18,16 @@ extract($user);
 
 <tr>
 
-<th width="213" align="right" scope="row">Enter your username</th>
+<th width="213" align="right" scope="row">Enter your first name</th>
 
-<td width="161"><input type="text" name="name" size="20" value="<?php echo $name; ?>" /></td>
+<td width="161"><input type="text" name="fname" size="20" value="<?php echo $fname; ?>" /></td>
+
+</tr>
+<tr>
+
+<th width="213" align="right" scope="row">Enter your last name</th>
+
+<td width="161"><input type="text" name="lname" size="20" value="<?php echo $lname; ?>" /></td>
 
 </tr>
 

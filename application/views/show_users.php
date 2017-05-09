@@ -9,15 +9,15 @@
 <body>
 
 <h2> Simple CI CRUD Application </h2>
-
+<?php echo "<td><a href = '".base_url()."index.php/home/'>Home</a></td>";?>
 <table width="600" border="1" cellpadding="5">
 
 <tr>
 
 <th scope="col">Id</th>
 
-<th scope="col">User Name</th>
-
+<th scope="col">First Name</th>
+<th scope="col">Last Name</th>
 <th scope="col">Email</th>
 
 <th scope="col">Mobile</th>
@@ -34,8 +34,8 @@
 
 <td><?php echo $u_key->id; ?></td>
 
-<td><?php echo $u_key->name; ?></td>
-
+<td><?php echo $u_key->fname; ?></td>
+<td><?php echo $u_key->lname; ?></td>
 <td><?php echo $u_key->email; ?></td>
 
 <td><?php echo $u_key->address; ?></td>

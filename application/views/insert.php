@@ -16,11 +16,19 @@
 
 <tr>
 
-<th width="213" align="right" scope="row">Enter your username</th>
+<th width="213" align="right" scope="row">Enter your first Name</th>
 
-<td width="161"><input type="text" name="name" size="20" /></td>
+<td width="161"><input type="text" name="fname" size="20" /></td>
 
 </tr>
+<tr>
+
+<th width="213" align="right" scope="row">Enter your lastname</th>
+
+<td width="161"><input type="text" name="lname" size="20" /></td>
+
+</tr>
+
 
 <tr>
 
@@ -43,6 +51,13 @@
 <th align="right" scope="row">Enter Your Address</th>
 
 <td><textarea name="address" rows="5" cols="20"></textarea></td>
+
+</tr>
+<tr>
+
+<th align="right" scope="row">Enter your Password</th>
+
+<td><input type="password" name="password" size="20" /></td>
 
 </tr>
 

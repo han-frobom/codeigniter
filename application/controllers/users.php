@@ -9,6 +9,7 @@ class Users extends CI_Controller {
 		parent::__construct();
 
 		$this->load->helper('url');
+    $this->load->library('session');
 
 		$this->load->model('users_model');
 
@@ -29,13 +30,15 @@ class Users extends CI_Controller {
 
 	public function insert_new_user() {
 
-		$udata['name'] = $this->input->post('name');
-
+		$udata['fname'] = $this->input->post('fname');
+		$udata['lname'] = $this->input->post('lname');
 		$udata['email'] = $this->input->post('email');
 
 		$udata['address'] = $this->input->post('address');
 
 		$udata['mobile'] = $this->input->post('mobile');
+		$udata['password'] = $this->input->post('password');
+
 
 		$res = $this->users_model->insert_users_to_db($udata);
 
@@ -52,7 +55,9 @@ class Users extends CI_Controller {
 	}
 	public function update() {
 
-		$mdata['name']=$_POST['name'];
+		$mdata['fname']=$_POST['fname'];
+		$mdata['lname']=$_POST['lname'];
+
 
 		$mdata['email']=$_POST['email'];
 
