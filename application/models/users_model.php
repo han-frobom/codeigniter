@@ -59,6 +59,11 @@ function get_user($email, $pwd)
         $query = $this->db->get('users');
 		return $query->result();
 	}
+
+	public function inserrtimg($data=array()){
+		$insert=$this->db->insert_batch('users',$data);
+		return $insert?true:false;
+	}
 }
 
 ?>

@@ -13,7 +13,11 @@ class signup extends CI_Controller
 	function index()
 	{
 		$this->load->model('users_model');
+		 $this->load->view('layout/header');
+
 		$this->load->view('signup_view');
+
+  $this->load->view('layout/footer');
 	}
 
 /*function signup_user()

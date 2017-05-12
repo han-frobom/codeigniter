@@ -1,10 +1,13 @@
 
 <html>
-<head>
+<!-- <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<title>CI Insert Form</title>
+<title>CI Insert Form</title> -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
 
 </head>
 
@@ -73,6 +76,3 @@
 
 </form>
 
-</body>
-
-</html>

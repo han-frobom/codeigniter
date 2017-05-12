@@ -6,7 +6,7 @@
 	<link href="<?php echo base_url("assets/css/bootstrap.css"); ?>" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<nav class="navbar navbar-default" role="navigation">
+<!-- <nav class="navbar navbar-default" role="navigation">
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
@@ -29,7 +29,7 @@
 			</ul>
 		</div>
 	</div>
-</nav>
+</nav> -->
 <div class="container">
 	<div class="row">
 		<div class="col-md-4 col-md-offset-4 well">
@@ -80,7 +80,7 @@
 				<span class="text-danger"><?php echo form_error('cpassword'); ?></span>
 			</div> -->
 
-			<div class="form-group">
+			 <div class="form-group">
 				<button name="submit" type="submit" class="btn btn-info">Signup</button>
 				<button name="cancel" type="reset" class="btn btn-info">Cancel</button>
 			</div>

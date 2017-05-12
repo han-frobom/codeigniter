@@ -10,7 +10,9 @@ class Home extends CI_Controller
 
  function index()
  {
+ 	 $this->load->view('layout/header');
   $this->load->view('home_view');
+  $this->load->view('layout/footer');
  }
 
  function logout()
